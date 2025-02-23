@@ -1,0 +1,49 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: "Kanit", serif;
+  font-style: normal;
+}
+
+body{
+  height: 100vh;
+  display:flex;
+  flex-direction:column;
+  padding: 100px;
+  background: linear-gradient(to right, hsl(300, 100%, 40%), hsl(229, 100%, 50%));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  background-color: black;
+}
+
+.logo{
+  font-size: 50px;
+  font-weight: 900;
+  background-color: white;
+  padding:  0px 50px;
+  color: black;
+}
+
+nav ul{
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  font-size: 30px;
+  color: white;
+}
+
+nav ul li:hover{
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+nav ul li:active{
+  color: lightgrey;
+}
