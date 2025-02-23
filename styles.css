@@ -45,11 +45,16 @@ nav ul{
   user-select: none;
 }
 
-nav ul li:hover{
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover{
   text-decoration-line: underline;
   cursor: pointer;
 }
 
-nav ul li:active{
+nav ul li a:active{
   color: lightgrey;
 }
