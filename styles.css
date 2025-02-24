@@ -5,42 +5,51 @@
   font-style: normal;
 }
 
+html{
+  font-size: 100%;
+}
+
 body{
   height: 100vh;
   display:flex;
   flex-direction:column;
-  padding: 100px;
+  box-sizing: border-box;
+  padding: 30px 100px;
   background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(155, 100%, 50%));
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* header content */
 header{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 50px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 7px 7px;
   background-color: black;
   box-shadow: 0px 0px 5px;
 }
-
+/* logo and nav bar wrapper */
+.bar-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* logo styles */
 .logo{
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 900;
   background: linear-gradient(to right, hsl(300, 100%, 40%), hsl(155, 100%, 50%));
   padding:  0px 50px;
   color: black;
   user-select: none;
 }
-
+/* nav list and link styles */
 nav ul{
   display: flex;
-  gap: 15px;
+  gap: 50px;
+  padding-right: 50px;
   list-style: none;
-  font-size: 30px;
+  font-size: 1.7rem;
   color: white;
   user-select: none;
 }
@@ -56,5 +65,29 @@ nav ul li a:hover{
 }
 
 nav ul li a:active{
-  color: lightgrey;
+  color: grey;
+}
+/* catagories and catagories list styles */
+.catagories{
+  box-shadow: inset 0px 0px 10px white;
+  padding: 20px;
+}
+
+.catagories ul{
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  color: white;
+  user-select: none;
+}
+
+.catagories ul li:hover{
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.catagories ul li:active{
+  color: grey;
 }
