@@ -31,6 +31,7 @@ header{
 /* logo and nav bar wrapper */
 .bar-wrapper{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -43,6 +44,17 @@ header{
   color: black;
   user-select: none;
 }
+
+.logo-images-wrapper{
+  display: flex;
+  margin-right: auto;  
+}
+
+.logo-images-wrapper img{
+  height: 80px;
+  width: auto;
+}
+
 /* nav list and link styles */
 nav ul{
   display: flex;
