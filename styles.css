@@ -10,11 +10,12 @@ html{
 }
 
 body{
-  height: 100vh;
+  height: 100%;
   display:flex;
   flex-direction:column;
+  gap: 30px;
   box-sizing: border-box;
-  padding: 30px 100px;
+  padding: 30px 50px;
   background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(155, 100%, 50%));
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,4 +103,36 @@ nav ul li a:active{
 
 .catagories ul li:active{
   color: grey;
+}
+/* image bar */
+.img-bar-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.img-bar-wrapper img{
+  display: flex;
+  max-height: 100%;
+  max-width: 1000px;
+  box-shadow: 0px 0px 10px black;
+}
+/* left nav bar styles */
+.left-nav-bar{
+  display: flex;
+  gap: 50px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.left-nav-bar ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  font-size: 1.5rem;
+  user-select: none;
+  padding: 10px;
+}
+
+.left-nav-bar ul li:hover{
+  cursor: pointer;
+  text-decoration-line: underline;
 }
