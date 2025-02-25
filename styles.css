@@ -16,7 +16,7 @@ body{
   gap: 30px;
   box-sizing: border-box;
   padding: 30px 50px;
-  background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(155, 100%, 50%));
+  background: linear-gradient(to right, hsl(268, 100%, 61%), hsl(155, 100%, 50%));
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -136,3 +136,5 @@ nav ul li a:active{
   cursor: pointer;
   text-decoration-line: underline;
 }
+
+
