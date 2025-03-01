@@ -11,10 +11,16 @@ const arrayOfImages = [
   "slider-images/image-10.jpg"
 ];
 
-function slider() {
-  const randomIndex = Math.floor(Math.random()*arrayOfImages.length);
-  const imageBar = document.querySelector(".img-bar-wrapper");
-  
+function imageSlideShow() {
+  const imageBar = document.querySelector(".image-bar-wrapper");
+  imageBar.innerHTML = "";
+
+  arrayOfImages.forEach(imageSrc => {
+      const createImage = document.createElement("img");
+      createImage.classList.add("slideShowImage")
+      createImage.src = imageSrc;
+      imageBar.appendChild(createImage);
+    });
 };
 
-slider();
+imageSlideShow();
