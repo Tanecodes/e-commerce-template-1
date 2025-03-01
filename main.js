@@ -11,16 +11,30 @@ const arrayOfImages = [
   "slider-images/image-10.jpg"
 ];
 
-function imageSlideShow() {
-  const imageBar = document.querySelector(".image-bar-wrapper");
-  imageBar.innerHTML = "";
-
-  arrayOfImages.forEach(imageSrc => {
-      const createImage = document.createElement("img");
-      createImage.classList.add("slideShowImage")
-      createImage.src = imageSrc;
-      imageBar.appendChild(createImage);
-    });
+function loopThrough() {
+  const imageDisplay = Math.floor(Math.random()*arrayOfImages.length);
+  return arrayOfImages[imageDisplay];  
 };
 
-imageSlideShow();
+const imageOne = document.createElement("img");
+imageOne.classList.add("slideShowImage");
+const imageTwo = document.createElement("img");
+imageTwo.classList.add("slideShowImage");
+const imageSlideShow = document.querySelector(".image-bar-wrapper");
+
+imageOne.src = loopThrough();
+imageTwo.src = loopThrough();
+
+if(imageSlideShow){
+  imageSlideShow.appendChild(imageOne);
+  imageSlideShow.appendChild(imageTwo);
+
+  function updateImages() {
+    imageOne.src = loopThrough();
+    imageTwo.src = loopThrough();
+  };
+  setInterval(updateImages,9000);
+}else{
+  console.error("not working have no idea why..")
+};
+
