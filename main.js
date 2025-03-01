@@ -33,7 +33,7 @@ if(imageSlideShow){
     imageOne.src = loopThrough();
     imageTwo.src = loopThrough();
   };
-  setInterval(updateImages,9000);
+  setInterval(updateImages,3000);
 }else{
   console.error("not working have no idea why..")
 };
